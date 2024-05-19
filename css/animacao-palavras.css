@@ -1,0 +1,23 @@
+  .texto-animado span::before{
+    content: "";
+    animation: palavras 30s infinite;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  @keyframes palavras {
+    0%, 20%{
+      content: "já parou para pensar se tudo que te dizem é realmente verdadeiro?";
+    }
+    21%, 40%{
+      content: "notou que algumas pessoas podem ter segundas intenções ao se aproximarem de você?";
+    }
+    41%, 60%{
+      content: "já considerou que nem sempre as intenções dos outros são tão transparentes quanto parecem?";
+    }
+    61%, 80%{
+      content: "percebeu que algumas informações podem ser distorcidas para manipular sua percepção?";
+    }
+    81%, 100%{
+      content: "já refletiu sobre a possibilidade de que nem todos que se aproximam de você têm boas intenções?";
+    }
+  }

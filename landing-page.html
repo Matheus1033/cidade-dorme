@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/lobo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/animacao-palavras.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/variables.css">
+
+    <title>Cidade Dorme</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-countainer">
+            <a href="">
+                <h1>Cidade Dorme</h1>
+            </a>
+            <nav>
+                <input type="checkbox" id="menu-hamburguer"/>
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#regras">Regras</a></li>
+                    <li><a href="#cartas">Cartas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="texto-animado">
+            Você <span></span>
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="texto-info">
+            <h1>Sobre</h1>
+            <p>
+                Uma cidade pequena, do interior, que está passando por um problema assustador: uma onda de assassinatos. A polícia é acionada, mas temos outro impasse: ao invés de um delegado, há dois. Só há uma certeza nesse momento: um deles é verdadeiro, o outro está a mando dos assassinos. O objetivo da cidade, então, é descobrir e matar o delegado falso. Todo dia, a cidade escolhe alguém para ser mandado à forca e, só então, o jogo pode prosseguir.
+            </p>
+        </div>
+        <img src="./images/foto-vila-cidade-dorme.jpeg" alt="vila de fazendeiros">
+    </section>
+    <section class="regras" id="regras">
+        <h1>Regras</h1>
+        <ul>
+            <li>
+                Quando o narrador disser 'Cidade dorme', todos fecham os olhos; se alguém os abrir durante a noite, será expulso da rodada.
+            </li>
+            <li>
+                Todos receberão uma função e, quando o narrador chamar essa função, podem abrir os olhos <span>Durante a noite</span>.
+            </li>
+            <li>
+                A quantidade de lobos dependerá do número de jogadores. Para cada 4 pessoas, uma delas deve ser lobo, conforme a lista apresentada:
+            </li>
+            <table class="countainer-table">
+                <thead>
+                    <tr>
+                        <th>Número de Pessoas</th>
+                        <th>Número de Lobos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>3</td>
+                      </tr>
+                </tbody>
+            </table>
+            <li>
+                Ganha aquele que cumprir a missão da classe, que é:
+                Para a classe vila, matar os lobos.
+                Para a classe lobos, acabar com toda a vila.
+                Para os neutros, ganham ajudando os lobos ou a vila, dependendo do personagem.
+            </li>
+        </ul>
+    </section>
+    <section class="cartas" id="cartas">
+        <div class="info-aldeao" id="aldeao">
+            <h2>Aldeões</h2>
+            <div class="infos aldeao">
+                <img src="./images/aldeao-cidade-dorme.jpeg" alt="Aldeão">
+                <h3>Aldeão</h3>
+                <p>Aldeão é aquele que deve encontrar os lobos que estão entre eles. Para ganhar, precisam enviar os lobos à forca por meio de votação.</p>
+            </div>
+            <div class="infos feiticeira">
+                <img src="./images/feiticeira-cidade-dorme.jpeg" alt="Feiticeira">
+                <h3>feiticeira</h3>
+                <p>Feiticeira é aquela que deve proteger os aldeões dos lobos. Para ganhar, ela precisa enviar os lobos à forca por meio de votação.</p>
+            </div>
+            <div class="infos druida">
+                <img src="./images/druida-cidade-dorme.jpeg" alt="Druida">
+                <h3>Druida</h3>
+                <p>Druida é o personagem que cura, porém, para curar, tem que matar outro no lugar. Para ganhar, ele precisa enviar os lobos à forca por meio de votação.</p>
+            </div>
+            <div class="infos vidente">
+                <img src="./images/vidente-cidade-dorme.jpeg" alt="Vidente">
+                <h3>Vidente</h3>
+                <p>Vidente é o personagem que descobre a função das pessoas. Para ganhar, ele precisa enviar os lobos à forca por meio de votação.</p>
+            </div>
+            <div class="infos vigilante">
+                <img src="./images/vigilante-cidade-dorme.jpeg" alt="Vigilante">
+                <h3>Vigilante</h3>
+                <p>Vigilante é o personagem que caça os lobos durante a noite, mas se matar a pessoa errada, ele se sente culpado e se mata. Para ganhar, ele precisa enviar os lobos à forca por meio de votação.</p>
+            </div>
+            <div class="infos medium">
+                <img src="./images/medium-cidade-dorme.jpeg" alt="Medium">
+                <h3>Medium</h3>
+                <p>Medium é o personagem que fala com os mortos durante a noite. Para ganhar, ele precisa enviar os lobos à forca por meio de votação.</p>
+            </div>
+            <div class="infos cupido">
+                <img src="./images/Cupido-cidade-dorme.jpeg" alt="Cupido">
+                <h3>Cupido</h3>
+                <p>Cupido é o personagem do amor que junta duas almas gêmeas. Para ganhar, ele precisa enviar os lobos à forca por meio de votação.</p>
+            </div>
+            <div class="infos resistente">
+                <img src="./images/resistente-cidade-dorme.jpeg" alt="Homem">
+                <h3>Resistente</h3>
+                <p>Resistente é o personagem que já sobreviveu a tantos acidentes, então ele pode ser atacado duas vezes. Para ganhar, ele precisa enviar os lobos à forca por meio de votação.</p>
+            </div>
+        </div>
+        <div class="info-lobo" id="lobo">
+            <h2>Lobos</h2>
+            <div class="infos lobo">
+                <img src="./images/lobo-cidade-dorme.jpeg" alt="Lobo">
+                <h3>Lobo</h3>
+                <p>Lobo é um ser místico que se transforma no luar e mata os moradores da vila. Para ganhar, precisam matar todos os aldeões.</p>
+            </div>
+            <div class="infos lobo-alfa">
+                <img src="./images/lobo-alfa-cidade-dorme.jpeg" alt="Lobo alfa">
+                <h3>Lobo Alfa</h3>
+                <p>Lobo alfa é o líder que é o mais forte dos lobos e pode matar duas vezes. Para ganhar, precisam matar todos os aldeões.</p>
+            </div>
+            <div class="infos lobo-vidente">
+                <img src="./images/lobo-vidente-cidade-dorme.jpeg" alt="Lobo vidente">
+                <h3>Lobo Vidente</h3>
+                <p>Lobo vidente é o lobo que vai descobrir as funções dos aldeões para saber quem matar primeiro. Para ganhar, precisam matar todos os aldeões.</p>
+            </div>
+            <div class="infos filhote">
+                <img src="./images/filhote-cidade-dorme.jpeg" alt="Lobo filhote">
+                <h3>Filhote</h3>
+                <p>Filhote é o lobo que, ao ser morto, é vingado pelos outros lobos. Para ganhar, precisam matar todos os aldeões.</p>
+            </div>
+            <div class="infos lobo-pesadelo">
+                <img src="./images/lobo-pesadelo-cidade-dorme.jpeg" alt="Lobo do pesadelo">
+                <h3>Lobo pesadelo</h3>
+                <p>Lobo do pesadelo é o lobo que, durante a noite, vai atormentar um aldeão e ele não pode usar a habilidade de sua função. Para ganhar, precisam matar todos os aldeões.</p>
+            </div>
+            <div class="infos lobo-pacifista">
+                <img src="./images/lobo-pacifista-cidade-dorme.jpeg" alt="Lobo pacifista">
+                <h3>Lobo pacifista</h3>
+                <p>Lobo pacifista é o lobo que não mata, mas pode inibir a morte de alguém na forca. Para ganhar, precisam matar todos os aldeões.</p>
+            </div>
+        </div>
+        <div class="info-neutro" id="neutro">
+            <h2>Neutros</h2>
+            <div class="infos bobo-da-corte">
+                <img src="./images/bobo-cidade-dorme.jpeg" alt="Bobo da corte">
+                <h3>Bobo</h3>
+                <p>Bobo é o personagem que tem distúrbios e precisa de atenção. Para ganhar, ele precisa ser enforcado.</p>
+            </div>
+            <div class="infos incendiario">
+                <img src="./images/incendiario-cidade-dorme.jpeg" alt="Incendiário">
+                <h3>Incendiário</h3>
+                <p>Incendiário é o personagem que tem distúrbios e odeia a todos. Para ganhar, ele precisa matar todos os aldeões e lobos.</p>
+            </div>
+            <div class="infos louco">
+                <img src="./images/louco-cidade-dorme.jpeg" alt="Louco">
+                <h3>Louco</h3>
+                <p>Louco é o personagem que tem distúrbio e odeia o povo da vila. Para ganhar, ele precisa matar todos os aldeões.</p>
+            </div>
+            <div class="infos amnesia">
+                <img src="./images/amnesia-cidade-dorme.jpeg" alt="Pessoa com amnésia">
+                <h3>Amnésia</h3>
+                <p>Amnésia é o personagem que tem Alzheimer e não se lembra quem ele é, então mata alguém e rouba sua função e habilidade até decidir trocar. Para ganhar, ele precisa continuar vivo com os aldeões.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <h4>Cidade Dorme</h4>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#regras">Regras</a></li>
+                <li><a href="#cartas">Cartas</a></li>
+            </ul>
+        </nav>
+        <div class="social"></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,257 @@
+/*Infos gerais*/
+html {
+    font-size: 62.5%;
+  }
+  body {
+    background-color: rgb( 50, 70, 130);
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "hero hero hero hero"
+      "sobre sobre sobre sobre"
+      "regras regras regras regras"
+      "cartas cartas cartas cartas"
+      "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
+  /*Header*/
+  .header {
+    grid-area: header;
+  }
+  .header .header-countainer {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+  }
+  .header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    transition: 0.3s;
+    color: #fff;
+  }
+  .header a:hover h1 {
+    color: darkorange;
+  }
+  /*Hero*/
+  .hero {
+    grid-area: hero;
+    height: 90.5vh;
+    background: url(../images/background-cidade-dorme.jpeg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .texto-animado{
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  @media (max-width: 425px) {
+    .hero {
+      height: 60vh;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+  }
+  /*Sobre*/
+  .sobre {
+    grid-area: sobre;
+    display: grid;
+    height: 90.5vh;
+    grid-template-columns: 2fr 2fr;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+    background: url(../images/lua-cidade-dorme.jpeg) center center no-repeat;
+    background-size: cover;
+  }
+  .sobre .texto-info{
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: red;
+  }
+  .sobre .texto-info h1{
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  .sobre .texto-info p{
+    text-indent: 15px;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 30px 0;
+  }
+  .sobre img{
+    height: 100%;
+    width: 100%;
+  }
+  @media(max-width:425px){
+    .sobre .texto-info{
+      text-align: center;
+    }
+    .sobre{
+      grid-template-columns: 2fr;
+      grid-template-rows: repeat(2,2fr);
+    }
+  }
+  /*Regras*/
+  .regras{
+    grid-area: regras;
+    padding: 20px;
+    height: 90.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../images/background-cidade-dorme.jpeg) center center no-repeat;
+    background-size: cover;
+  }
+  .regras h1{
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .regras ul li{
+    padding: 20px 10px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .regras .countainer-table{
+    background-color: #fff;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    margin: 25px, 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    color: #000;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  .regras .countainer-table thead tr{
+    background-color: #009879;
+    color: #fff;
+    text-align: left;
+  }
+  .regras .countainer-table th, .regras .countainer-table td{
+    padding: 12px 15px;
+  }
+  .regras .countainer-table tbody tr{
+    border-bottom:  1px solid #ddd;
+  }
+  .regras .countainer-table tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+  }
+  .regras .countainer-table tbody tr:last-of-type{
+    border-bottom: 3px solid #009879;
+  }
+  .regras .countainer-table tbody tr.linha-ativa{
+    font-weight: bold;
+    color: #009879;
+  }
+  @media (max-width:425px){
+    .regras{
+      grid-template-columns: 1fr;
+    }
+  }
+  /*Cartas*/
+  .cartas{
+    grid-area: cartas;
+    grid-template-areas: 
+    "aldeao aldeao aldeao aldeao"
+    "lobo lobo lobo lobo"
+    "neutro neutro neutro neutro";
+  }
+  .cartas .infos{
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+  }
+  .cartas .infos{
+    width: 100%;
+    height: 100%;
+  }
+  .cartas h2{
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .cartas .infos h3{
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  .cartas .infos p{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .cartas .infos img{
+    border-radius: 10px;
+  }
+  .cartas #aldeao{
+    grid-area: aldeao;
+    background-color: green;
+    width: 100.5%;
+    display: flex;
+  }
+  .cartas #lobo{
+    grid-area: lobo;
+    background-color: red;
+    width: 100.5%;
+    display: flex;
+  }
+  .cartas #neutro{
+    grid-area: neutro;
+    background-color: gray;
+    width: 100.5%;
+    display: flex;
+  }
+  @media (max-width:768px){
+    .cartas{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+  @media (max-width:425px){
+    .cartas{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4,1fr);
+    }
+  }
+  /*Footer*/
+  .footer {
+    grid-area: footer;
+    display: flex;
+    background-color: rgb(8, 39, 132);
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 20px;
+  }
+  .footer nav {
+    margin: 50px 0;
+  }
+  .footer nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .footer nav ul li a {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 20px;
+    color: #fff;
+  }
+  .footer nav ul li a:hover {
+    font-weight: 700;
+    color: darkorange;
+    transition: 0.3s;
+  }
